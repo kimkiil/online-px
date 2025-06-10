@@ -1,11 +1,13 @@
-import "./logo.css";
+import "./Nav.css";
+import { Link } from "react-router-dom";
+
 
 export default function LogoBtn() {
   return (
     <div className="logo">
-      <a href="/">
+      <Link to="/" className="Logo-btn">
         <img src="/image/pattern.jpg" alt="로고" />
-      </a>
+      </Link>
     </div>
   );
 }

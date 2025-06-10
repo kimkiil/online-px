@@ -1,4 +1,5 @@
-body, ul, li {
+
+* {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6,24 +7,60 @@ body, ul, li {
 
 nav {
   background-color: gray;
-  color: rgb(104, 123, 230);
-  display: flex;
-  justify-content: center;
-  justify-items: stretch;
+  color: white;
+  justify-content: space-between;
   align-items: center;
+  display: flex;
 }
 
-.menu {
+.menu-wrapper, .login-btn-wrapper, .join-btn-wrapper {
   display: inline-block;
   margin: 1rem;
+  margin-right: 3rem;
+  background-color: gray;
   border-radius: 0.5rem;
-  background-color: gainsboro;
 }
 
-a {
+.menu-btn:hover, .login-btn-wrapper:hover, .join-btn-wrapper:hover {
+  background-color: rgb(104, 123, 230);
+  color: white;
+}
+
+.menu-btn, .login-btn, .join-btn {
   display: inline-block;
+  border-radius: 0.5rem;
   padding: 2px 2rem;
   color: inherit;
   text-decoration: none;
   font-size: 2rem;
 }
+
+.logo img {
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 50%;
+  display: block;
+  pointer-events: all;
+}
+
+.logo {
+  padding: 0;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-list {
+    flex-direction: column;
+    flex: start;
+  }
+  
+  .menu-wrapper, .login-btn-wrapper, .join-btn-wrapper {
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0;
+  }
+}
+

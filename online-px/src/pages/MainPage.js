@@ -2,8 +2,8 @@ import Nav from "../component/nav-bar/Nav"
 
 export default function MainPage() {
   return (
-  <>
-  <Nav/>
-  </>
+    <header>
+      <Nav/>
+    </header>
   )
 }
