@@ -2,8 +2,8 @@ import "./Nav.css";
 import JoinBtn from "./JoinBtn";
 import Login from "./LoginBtn";
 import LogoBtn from "./LogoBtn";
-import { Link } from "react-router-dom";
 import MenuBtn from "./MenuBtn";
+import DropdownMenu from "./DropdownMenu";
 
 export default function Nav() {
   return ( 
@@ -15,6 +15,7 @@ export default function Nav() {
         <Login/>
         <JoinBtn/>
       </ul>
+      <DropdownMenu />
     </nav>
   </>
   )
