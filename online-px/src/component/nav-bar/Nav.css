@@ -59,10 +59,11 @@ nav {
 @media screen and (max-width: 768px) {
   .menu-list {
     flex-direction: column;
-    flex: start 1;
-    display: none;
+    position: relative;
+    visibility: hidden;
+    transform: translateY(-100%);
   }
-
+  
   .hamburger {
     display: block;
     cursor: pointer;
@@ -78,13 +79,11 @@ nav {
     background-color: gray;
     margin: 0 0 0;
   }
-  
-  .menu-list.close {
-    display: none;
-  }
-  
+
   .menu-list.open {
-    display: inline-block;
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+    transform: translateY(0);
   }
 }
 
